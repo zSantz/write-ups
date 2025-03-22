@@ -1,11 +1,11 @@
 # 🏦 Write-Up - TryHackMe: Introduction to Offensive Security (Pre-Security)
 
-**Room:** Introduction to Offensive Security
-**Link:**  https://tryhackme.com/room/offensivesecurityintro
-**Plataforma:** TryHackMe  
-**Sistema:** Parrot OS (Lab Virtual)  
-**Data:** 22/03/2025
-**Player:** https://tryhackme.com/p/Elninosantz
+- **Room:** Introduction to Offensive Security
+- **Link:**  https://tryhackme.com/room/offensivesecurityintro
+- **Plataforma:** TryHackMe  
+- **Sistema:** Parrot OS (Lab Virtual)  
+- **Data:** 22/03/2025
+- **Player:** https://tryhackme.com/p/Elninosantz
 
 ---
 
@@ -25,7 +25,7 @@ Primeiro passo foi a enumeração de diretórios usando o `gobuster`:
 gobuster dir -u http://fakebank.thm -w wordlist.txt
 ```
 
-image
+![](https://github.com/zSantz/write-ups/blob/main/photo_5113947324203248880_x.jpg)
 
 **Diretórios encontrados:**
 - `/images` → Diretório comum para arquivos estáticos.
@@ -33,12 +33,12 @@ image
 
 Acessando `http://fakebank.thm/bank-transfer`, foi encontrado uma interface de transferência bancária **sem qualquer tipo de autenticação ou controle de acesso**.
 
-image
+![](https://github.com/zSantz/write-ups/blob/main/photo_5113947324203248882_y.jpg)
 
 ---
 
 
-## 💸 Etapa 2 - Realizando a Transferência
+## 💸 Etapa 2 - Realizando a Transferência - FINAL
 
 Preenchi os campos do formulário da página `/bank-transfer` de acordo com o requerimento da Room:
 
@@ -52,4 +52,4 @@ Transferência foi executada com sucesso, sem qualquer bloqueio. Após a confirm
 - Saldo atualizado com os $2000 recebidos.
 - A flag final: **BANK-HACKED** 💣
 
-image
+![](https://github.com/zSantz/write-ups/blob/main/photo_5113947324203248884_x.jpg)
