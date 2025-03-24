@@ -25,7 +25,7 @@ Primeiro passo foi a enumeração de diretórios usando o `gobuster`:
 gobuster dir -u http://fakebank.thm -w wordlist.txt
 ```
 
-![](https://github.com/zSantz/write-ups/blob/main/photo_5113947324203248880_x.jpg)
+![](https://github.com/zSantz/write-ups/blob/main/assets/img/photo_5113947324203248880_x.jpg)
 
 **Diretórios encontrados:**
 - `/images` → Diretório comum para arquivos estáticos.
@@ -33,7 +33,7 @@ gobuster dir -u http://fakebank.thm -w wordlist.txt
 
 Acessando `http://fakebank.thm/bank-transfer`, foi encontrado uma interface de transferência bancária **sem qualquer tipo de autenticação ou controle de acesso**.
 
-![](https://github.com/zSantz/write-ups/blob/main/photo_5113947324203248882_y.jpg)
+![](https://github.com/zSantz/write-ups/blob/main/assets/img/photo_5113947324203248882_y.jpg)
 
 ---
 
@@ -52,4 +52,4 @@ Transferência foi executada com sucesso, sem qualquer bloqueio. Após a confirm
 - Saldo atualizado com os $2000 recebidos.
 - A flag final: **BANK-HACKED** 💣
 
-![](https://github.com/zSantz/write-ups/blob/main/photo_5113947324203248884_x.jpg)
+![](https://github.com/zSantz/write-ups/blob/main/assets/img/photo_5113947324203248884_x.jpg)
